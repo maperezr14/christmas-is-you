@@ -2,8 +2,8 @@
 
 
 #Equipo de Desarrollo: 
-- Mariangeles
-- Mayte
-- Kiara
-- Thania
-- Yola
+- 💻 Mariangeles
+- 💻 Maite
+- 💻 Kiara
+- 💻 Thania
+- 💻 Yola
