@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "html2canvas": "^1.4.1",
+    "normalize-scss": "^7.0.1",
     "sass": "^1.56.1"
   }
 }
