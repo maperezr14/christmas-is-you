@@ -4,36 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\assets\styles\css\main.css">
-    <title>Contacto</title>
+
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+
+    <title>Christmas Is You</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/styles/css/main.css">
 </head>
 <body>
-    <h1 class="contact">Contacto</h1>
-    <form action="action_page.php" class="contact-box">
-        <fieldset class="mark">
-            Nombre: <br>
-            <input class="email" type="text" name="Nombre">
-            <br>
-            E-mail:<br>
-            <input class="email" type="text" name="Apellido">
-            <br>
-            Mensaje:<br>
-            <textarea class="email" name="mensaje" cols="30" rows="10"></textarea>
-            <br><br>
-            <input class="buttonc" type="submit" value="Enviar">
-        </fieldset>
-    </form>
-    <div>
-        <li class="direction">
-            <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
-          </li>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="../assets/images/logo.png" alt="Christmas Is You"></a>
+            </div>
+            <ul class="navbar">
+                <li><a href="../index.html" class="option-menu">Inicio</a></li>
+                <li><a href="../nuestros-clientes/index.html" class="option-menu">Nuestros Clientes</a></li>
+                <li><a href="../pide-tu-carta/index.html" class="option-menu">Pide tu Carta</a></li>
+                <li><a href="../contacto/index.html" class="option-menu">Contacto</a></li>
+            </ul>
+            <!-- Este div solo se mostrará en dispositivos móviles, normalmente uso una clase maestra en tipo "only-mobile" o "only-desktop" para elementos que se muestran y/o ocultan en un tamaño u otro. -->
+            <div class="only-mobile control">
+                <div class="icon">
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <h1 class="contact">Contacto</h1>
+      <form action="action_page.php" class="contact-box">
+          <fieldset class="mark">
+              Nombre: <br>
+              <input class="email" type="text" name="Nombre">
+              <br>
+              E-mail:<br>
+              <input class="email" type="text" name="Apellido">
+              <br>
+              Mensaje:<br>
+              <textarea class="email" name="mensaje" cols="30" rows="10"></textarea>
+              <br><br>
+              <input class="buttonc" type="submit" value="Enviar">
+          </fieldset>
+      </form>
+      <div>
           <li class="direction">
-            <i class="fa-solid fa-phone"></i> xxx-xxx-xxx
-          </li>
-          <li class="direction">
-            <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
-          </li>
-        
+              <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
+            </li>
+            <li class="direction">
+              <i class="fa-solid fa-phone"></i> xxx-xxx-xxx
+            </li>
+            <li class="direction">
+              <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
+            </li>
+          
+      </div>
+    </main>
+    <footer>
+        <div class="top-info">
+            <div class="bloq-top">
+              <a href="../index.html" class="logo-footer">
+                <img src="../assets/images/logo.png" alt="Christmas Is You">
+              </a>
+            </div>
+            <div class="bloq-top">
+              <ul>
+                <li><a href="../nuestros-clientes/index.html">Nuestros Clientes</a></li>
+                <li><a href="../pide-tu-carta/index.html">Pide tu Carta</a></li>
+                <li><a href="../contacto/index.html">Contacto</a></li>
+                <li><a href="../preguntas-frecuentes/index.html">Preguntas Frecuentes</a></li>
+                <li><a href="../terminos-y-condiciones/index.html">Términos y Condiciones</a></li>
+              </ul>
+            </div>
+            <div class="bloq-top">
+              <div class="rrss">
+                <p>Síguenos en:</p>
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; Christmas Is You 2022 - Todos los derechos reservados</p>
+        </div>
     </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>  
 </body>
 </html>

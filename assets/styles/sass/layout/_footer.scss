@@ -1,1 +1,94 @@
 // Footer
+@import "../utilities/variables";
+
+footer {
+    padding: 30px;
+    background-color: $color-azul;
+    .top-info {
+        display: flex;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+        .bloq-top {
+            width: 100%;
+            margin-bottom: 35px;
+            @media screen and (min-width: 1200px) {
+                width: 33.333%;
+            }            
+            &:first-child {
+                text-align: center;
+                @media screen and (min-width: 1200px) {
+                    text-align: left;
+                }
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                line-height: 35px;
+                color: $color-amarillo;
+                text-align: center;
+                li {
+                    i {
+                        margin-right: 5px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        transition: $transitions;
+                    }
+                    &:hover {
+                        color: $color-rojo;
+                    }
+                }
+            }
+            .rrss {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $color-amarillo;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    li {
+                        a {
+                            display: block;
+                            background: $color-dorado;
+                            border-radius: 100%;
+                            text-align: center;
+                            line-height: 40px;
+                            margin-right: 10px;
+                            width: 40px;
+                            height: 40px;
+                            color: $color-azul;
+                            transition: $transitions;
+                            i {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        margin-top: 0px;
+        p {
+            text-align: center;
+            margin: 0;
+            color: $color-amarillo;
+            opacity: 0.7;
+            min-width: none;
+        }
+    }
+}
