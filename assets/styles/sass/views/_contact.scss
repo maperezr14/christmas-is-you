@@ -1,1 +1,32 @@
 // Estilos página de contacto
+
+.contact{
+    text-align: center;
+    color: #014C35;
+}
+.mark{
+    color: #014C35;
+    border: none;
+}
+.email{
+    background: rgba(1, 130, 81, 0.58);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+}
+.buttonc{
+    background-color: #AD081B;
+    border-radius: 20.5px;
+    border-color: rgba(218, 169, 66, 1);
+    width: 145px;
+    height: 36.75px;
+}
+.direction{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 3px;
+    margin-right: 5mm;
+}
+
