@@ -1,8 +1,32 @@
 // Estilos Generales
+@import "../base/typos";
+@import "../utilities/variables";
+
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: $color-verde-2;
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+.only-mobile {
+    display: block;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+.only-desktop {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
