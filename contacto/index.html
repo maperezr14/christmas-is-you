@@ -34,32 +34,39 @@
     </header>
     <main>
       <h1 class="contact">Contacto</h1>
+      <img class="gift" src="../assets/images/contacto-separador.png" alt="separador regalo">
       <form action="action_page.php" class="contact-box">
           <fieldset class="mark">
-              Nombre: <br>
-              <input class="email" type="text" name="Nombre">
-              <br>
-              E-mail:<br>
-              <input class="email" type="text" name="Apellido">
-              <br>
-              Mensaje:<br>
-              <textarea class="email" name="mensaje" cols="30" rows="10"></textarea>
-              <br><br>
-              <input class="buttonc" type="submit" value="Enviar">
+            <div class="form-control half-control"> 
+                <label class="subtitle-form" for="name">Nombre:</label>
+                <input class="name-contact" type="text" name="Nombre">
+           </div>
+           <div class="form-control half-control" > 
+                <label class="email-form" for="mail">Correo electrónico:</label>
+                <input class="email"  type="text" name="Correo">
+           </div>
+           <div class="form-control"> 
+                <label class="subtitle-form" for="msg">Mensaje:</label>
+                <textarea class="message" name="mensaje" cols="30" rows="10"></textarea>
+           </div>
+              <button class="buttonc"> Enviar </button>
           </fieldset>
       </form>
       <div>
-          <li class="direction">
-              <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
-            </li>
-            <li class="direction">
-              <i class="fa-solid fa-phone"></i> xxx-xxx-xxx
-            </li>
-            <li class="direction">
-              <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
-            </li>
-          
-      </div>
+        <ul>
+        <div class="direction">
+          <li>
+            <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
+          </li>
+          <li >
+            <i class="fa-solid fa-phone"></i> xxx-xxx-xxx
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
+          </li>
+        </div>
+        </ul>
+        </div>
     </main>
     <footer>
         <div class="top-info">
