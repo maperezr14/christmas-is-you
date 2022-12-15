@@ -216,5 +216,19 @@ $(document).ready(function () {
         var item = "<div class='snow" + id + "' style='position:absolute; margin-left: " + left + "px; margin-top: " + top + "px; width: " + width + "px; height: " + height + "px; border-radius: 50%; background-color: white; -webkit-filter: blur(" + blur +"px); -moz-filter: blur(" + blur + "px); -o-filter: blur(" + blur + "px); -ms-filter: blur(" + blur + "px); filter: blur(" + blur + "px);'></div>"
         return item;
       }
+    /* Agregar acordeon aqui */
+    var acc = document.getElementsByClassName('faqs-title');
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+            this.classList.toggle('active');
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+        });
     }
 });
