@@ -2,19 +2,42 @@
 @import "../base/typos";
 @import "../utilities/variables";
 
-* {
+*, 
+*:before,
+*:after {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
     font-weight: 300;
     font-size: 16px;
-    color: $color-verde-2;
+    color: $color-verde-1;
+    main {
+        padding: 75px 0;
+        @media screen and (min-width: 1200px) {
+            padding: 95px 0;
+        }
+    }
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         font-size: 32px;
+        margin: 0;
+        @media screen and (min-width: 1200px) {
+            font-size: 38px;
+        }
+    }
+    .btns {
+        background-color: $color-rojo;
+        color: $color-amarillo;
+        font-size: 18px;
+        position: relative;
+        padding: 10px 35px;
+        border-radius: 8px;
+    }
+    a {
+        text-decoration: none;
     }
 }
 

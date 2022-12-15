@@ -20,7 +20,7 @@
             <ul class="navbar">
                 <li><a href="../index.html" class="option-menu">Inicio</a></li>
                 <li><a href="../nuestros-clientes/index.html" class="option-menu">Nuestros Clientes</a></li>
-                <li><a href="../pide-tu-carta/index.html" class="option-menu">Pide tu Carta</a></li>
+                <li><a href="../pide-tu-carta/index.html" class="option-menu active">Pide tu Carta</a></li>
                 <li><a href="../contacto/index.html" class="option-menu">Contacto</a></li>
             </ul>
             <!-- Este div solo se mostrará en dispositivos móviles, normalmente uso una clase maestra en tipo "only-mobile" o "only-desktop" para elementos que se muestran y/o ocultan en un tamaño u otro. -->
@@ -32,7 +32,80 @@
         </nav>
     </header>
     <main>
-      <!-- Aqui va tu código, por fa no modifiques ni el header ni el footer :) <3 -->
+      <section class="ask-for-your-letter">
+        <div class="content-ask-for-your-letter">
+          <h1 class="title-section">Pide tu carta</h1>
+          <p>Sabemos que tu peque se ha portado muy bien durante este año, y queremos hacer que su regalo venga con una carta dirigida especialmente a él/ella.</p>
+          <p>Sigue los pasos para conseguir su carta:</p>
+          <form action="" id="form-letter">
+            <p class="step-letter step-one">1. Selecciona el personaje de tu preferencia, la carta estará firmada por el personaje que selecciones.</p>
+            <div class="options-characters">
+              <div class="form-control">
+                <label class="label-control characters" for="santa">
+                  <input class="opt-radius" type="radio" name="radio" id="santa" value="santa"/>
+                  <img src="/assets/images/opt_santa.jpg" alt="santa">
+                </label>
+                <span>Santa Claus</span>
+              </div>
+              <div class="form-control">
+                <label class="label-control characters" for="kings">
+                  <input class="opt-radius" type="radio" name="radio" id="kings" value="kings"/>
+                  <img src="/assets/images/opt_reyes.jpg" alt="kings">
+                </label>
+                <span>Reyes Magos</span>
+              </div>
+              <div class="form-control">
+                <label class="label-control characters" for="olentzero">
+                  <input class="opt-radius" type="radio" name="radio" id="olentzero" value="olentzero"/>
+                  <img src="/assets/images/opt_olentzero.jpg" alt="olentzero">
+                </label>
+                <span>Olentzero</span>
+              </div>
+              <div class="form-control">
+                <label class="label-control characters" for="cagatio">
+                  <input class="opt-radius" type="radio" name="radio" id="cagatio" value="cagatio"/>
+                  <img src="/assets/images/opt_cagatio.jpg" alt="cagatio">
+                </label>
+                <span>Cagatió</span>
+              </div>    
+            </div>
+            <p class="step-letter step-two">2. Indica el nombre del peque que recibirá la carta y escribe tu mensaje (máx. 450 caracteres).</p>
+            <div class="inputs-text">
+              <div class="form-control">
+                <label for="nameChild">Nombre de tu peque:</label>
+                <input type="text" name="name" id="nameChild" maxlength="50" value="">
+              </div>
+              <div class="form-control">
+                <label for="message">Escribe tu mensaje:</label>
+                <textarea name="message" id="message" maxlength="450" value=""></textarea>
+                <div id="the-count">
+                  <span id="current">0</span>
+                  <span id="maximum">/ 450</span>
+                </div>
+              </div>
+            </div>
+            <p class="step-letter step-three">3. Haz clic en el botón "Mira tu carta aquí" y que surja la magia!</p>
+            <div class="form-control">              
+              <a href="#" id="myBtn" class="btns open-letter">Mira tu carta aquí</a>
+            </div>
+          </form>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="capture" class="capture">
+                <img src="" alt="Descarga tu carta" class="img-capture">
+                <div class="content-letter">
+                  <p class="name-kid">Hola, <span id="addName"></span>!</p>
+                  <div id="msg-to-kid" class="msg-to-kid"></div>
+                </div>                
+              </div>
+              <a href="#" class="btns btn-download" id="btnDownload">Descarga tu carta!</a>
+            </div>
+          </div>          
+        </div>
+      </section>
     </main>
     <footer>
         <div class="top-info">
@@ -69,6 +142,17 @@
     </footer>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
     <script src="../assets/js/main.js"></script>  
 </body>
 </html>
+
+<section class="section-less">
+  <div class="content-less">
+    <p>Preprocesador LESS</p>
+    <ul>
+      <li>Variables</li>
+      <li>Anidamiento</li>
+    </ul>
+  </div>
+</section>
