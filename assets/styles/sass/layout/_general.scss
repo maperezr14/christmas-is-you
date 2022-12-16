@@ -15,17 +15,19 @@ body {
     font-size: 16px;
     color: $color-verde-1;
     main {
-        padding: 75px 0;
+        // padding: 75px 0;
         @media screen and (min-width: 1200px) {
-            padding: 95px 0;
+            // padding: 95px 0;
         }
     }
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         font-size: 32px;
         margin: 0;
+        margin-bottom: 35px;
         @media screen and (min-width: 1200px) {
             font-size: 38px;
+            margin-bottom: 45px;
         }
     }
     .btns {
