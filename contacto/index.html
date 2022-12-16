@@ -22,7 +22,7 @@
                 <li><a href="../index.html" class="option-menu">Inicio</a></li>
                 <li><a href="../nuestros-clientes/index.html" class="option-menu">Nuestros Clientes</a></li>
                 <li><a href="../pide-tu-carta/index.html" class="option-menu">Pide tu Carta</a></li>
-                <li><a href="../contacto/index.html" class="option-menu">Contacto</a></li>
+                <li><a href="../contacto/index.html" class="option-menu active">Contacto</a></li>
             </ul>
             <!-- Este div solo se mostrará en dispositivos móviles, normalmente uso una clase maestra en tipo "only-mobile" o "only-desktop" para elementos que se muestran y/o ocultan en un tamaño u otro. -->
             <div class="only-mobile control">
@@ -33,40 +33,39 @@
         </nav>
     </header>
     <main>
-      <h1 class="contact">Contacto</h1>
-      <img class="gift" src="../assets/images/contacto-separador.png" alt="separador regalo">
-      <form action="action_page.php" class="contact-box">
-          <fieldset class="mark">
-            <div class="form-control half-control"> 
-                <label class="subtitle-form" for="name">Nombre:</label>
-                <input class="name-contact" type="text" name="Nombre">
-           </div>
-           <div class="form-control half-control" > 
-                <label class="email-form" for="mail">Correo electrónico:</label>
-                <input class="email"  type="text" name="Correo">
-           </div>
-           <div class="form-control"> 
-                <label class="subtitle-form" for="msg">Mensaje:</label>
-                <textarea class="message" name="mensaje" cols="30" rows="10"></textarea>
-           </div>
-              <button class="buttonc"> Enviar </button>
-          </fieldset>
-      </form>
-      <div>
-        <ul>
-        <div class="direction">
-          <li>
-            <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
-          </li>
-          <li >
-            <i class="fa-solid fa-phone"></i> xxx-xxx-xxx
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
-          </li>
+      <section class="contact-form">
+        <div class="contact-form-content">
+          <h1 class="title-section">Contacto</h1>
+          <form action="" class="contact-box">
+            <fieldset class="mark">
+              <div class="form-control half-control"> 
+                  <label class="subtitle-form" for="name">Nombre:</label>
+                  <input class="name-contact" type="text" name="Nombre">
+             </div>
+             <div class="form-control half-control" > 
+                  <label class="email-form" for="mail">Correo electrónico:</label>
+                  <input class="email"  type="email" name="Correo">
+             </div>
+             <div class="form-control"> 
+                  <label class="subtitle-form" for="msg">Mensaje:</label>
+                  <textarea class="message" name="mensaje" cols="30" rows="10"></textarea>
+             </div>
+                <button class="buttonc">Enviar</button>
+            </fieldset>
+          </form>
+          <ul class="direction">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Calle Alcalá, 28032, Madrid
+            </li>
+            <li >
+              <i class="fa-solid fa-phone"></i> +34 123 45 67
+            </li>
+            <li>
+              <a href="mailto:contacto@christmasisyou.com"><i class="fa-solid fa-envelope"></i>  contacto@christmasisyou.com</a>
+            </li>
+          </ul>
         </div>
-        </ul>
-        </div>
+      </section>
     </main>
     <footer>
         <div class="top-info">
