@@ -22,9 +22,11 @@ body {
     }
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
-        font-size: 32px;
-        margin: 0;
+        font-size: 28px;
+        margin: 0 auto;
         margin-bottom: 35px;
+        text-align: center;
+        max-width: 90%;
         @media screen and (min-width: 1200px) {
             font-size: 38px;
             margin-bottom: 45px;

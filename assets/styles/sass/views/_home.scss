@@ -18,8 +18,11 @@
 
 .about_us{
     margin: 0px;
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        padding: 50px;
+    }
     .about-us_container{
         width: 90%;
         margin: 0 auto;
@@ -63,12 +66,15 @@
     ul{
         list-style: none;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
         margin-bottom: 45px;
         @media screen and (min-width:1200px){
            flex-direction: row;
+           align-items: center;
 
          } 
          li{
