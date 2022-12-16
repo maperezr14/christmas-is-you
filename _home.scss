@@ -1,0 +1,141 @@
+// Estilos página de incio
+
+@import "../base/typos";
+@import "../utilities/variables";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: $color-verde-2;
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+
+
+
+.banner{
+   img{
+        width: 100%;
+        
+    }
+}
+
+.caption{
+    text-align: center;
+}
+.about_us{
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    .about-us_container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:1200px){
+            width: 80%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cluster{
+            width: 100%;
+            @media screen and (min-width:1200px){
+               width: 40%;
+               order: 2;
+
+            }
+           img{
+            width: 100%;
+        
+           }
+        
+        }
+        p{
+            @media screen and (min-width:1200px){
+                width: 55%;
+                order: 1;
+ 
+             } 
+        }
+    }
+}
+
+
+
+.ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (min-width:1200px){
+           flex-direction: row;
+
+         } 
+         li{
+            font-size: 20px;
+            margin:15px 25px;
+            i{
+                width: 40px;
+                height: 40px;
+                color:red;
+                border:3px solid;
+                border-radius: 100%;
+                margin-right: 10px;
+                text-align: center;
+                line-height: 40px;
+            }
+         }
+    }
+
+}
+
+.our_clients{
+    text-align: center;
+}
+.image_customers{
+    img{
+        border-radius: 100%;
+        width: 60%;
+        margin:0 auto;
+        margin-bottom: 50px;
+        padding:20px;
+       
+        
+       
+        @media screen and (min-width:768px)
+
+         {
+           width:150px ; 
+           height:140px;
+          
+        }
+        @media screen and (min-width:1300px)
+
+         {
+           width:239px ; 
+           height:212px;
+           justify-content: space-between;
+          
+        }
+        
+    }
+    
+}
+
+
+    
+  
+
+
