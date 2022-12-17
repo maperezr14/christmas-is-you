@@ -6,6 +6,7 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 30px;
+        padding-top: 90px;
         @media screen and (min-width: 1200px){
             width: 80%;
         }
@@ -14,7 +15,7 @@
             text-align: center;
             text-align: center;
             padding-bottom: 100px;
-            margin-bottom: 65px;
+            margin-bottom: 30px;
             &::after {
                 content: '';
                 position: absolute;
@@ -33,6 +34,7 @@
             padding: 15px;
             border-radius: 8px;
             margin-top: 30px;
+            margin-bottom: 65px;
             @media screen and (min-width: 1200px) {
                 background: none;
                 padding: 0;
@@ -52,6 +54,7 @@
                 align-items: center;
                 justify-content: space-between;
                 align-content: center;
+                margin-bottom: 45px;
                 .form-control {
                     width: calc(45% - 10px);
                     margin: 10px;
@@ -129,7 +132,7 @@
                 display: flex;
                 flex-direction: column;
                 @media screen and (min-width: 1200px) {
-                    width: 40%;
+                    width: 100%;
                 }
                 .form-control {
                     display: flex;
@@ -146,8 +149,14 @@
                         font-size: 16px;
                         font-family: $font-family;
                     }
+                    input {
+                        width: 50%;
+                    }
                     textarea {
                         min-height: 250px;
+                        @media screen and (min-width: 1200px) {
+                            min-height: auto;
+                        }
                     }
                     #the-count {
                         text-align: right;
@@ -192,26 +201,81 @@
                         width: 100%;
                     }
                     .content-letter {
-                        position: absolute;
-                        top: 530px;
+                        position: absolute;                        
                         left: 50%;
                         transform: translate(-50%, -50%);
                         width: 80%;
                     }
                     &.letter-santa {
-                        font-family: 'Parisienne', cursive;
+                        font-family: 'Marck Script', cursive;
                         .content-letter {
+                            top: 565px;
                             .name-kid {
-                                color: $color-rojo;
-                                font-size: 40px;
+                                color: #b00409;
+                                font-size: 45px;
                                 font-weight: bold;
                                 line-height: 1;
                                 margin: 0;
                                 margin-bottom: 25px;
                             }
                             .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-olentzero {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 295px;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 45px;
                                 font-weight: bold;
-                                font-size: 23px;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 25px;
+                            }
+                            .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-kings {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 545px;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 45px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 25px;
+                            }
+                            .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-cagatio {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 315px;
+                            width: 57%;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 30px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 15px;
+                            }
+                            .msg-to-kid {
+                                font-size: 16px;
+                                color: #060606;
                             }
                         }
                     }
