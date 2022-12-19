@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    AOS.init();
     // Open/Close menu mobile
     $(".icon").click(function() {
         $(this).toggleClass('active');
