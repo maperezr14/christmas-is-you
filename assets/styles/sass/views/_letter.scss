@@ -150,7 +150,10 @@
                         font-family: $font-family;
                     }
                     input {
-                        width: 50%;
+                        width: 100%;
+                        @media screen and (min-width: 1200px) {
+                            width: 50%;
+                        }
                     }
                     textarea {
                         min-height: 250px;
@@ -169,6 +172,9 @@
                 display: none;
             }
             .open-letter {
+                display: none;
+            }
+            #btnDownloadM {
                 display: none;
             }
         }

@@ -185,6 +185,7 @@ body .btns {
   position: relative;
   padding: 10px 35px;
   border-radius: 8px;
+  border-color: #DAA942;
 }
 body a {
   text-decoration: none;
@@ -313,6 +314,7 @@ footer .copy p {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 45px;
 }
 @media screen and (min-width: 1200px) {
   .contenedor .flex-container {
@@ -320,7 +322,12 @@ footer .copy p {
   }
 }
 .contenedor .flex-container .titulo-imagen {
-  width: 40%;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .contenedor .flex-container .titulo-imagen {
+    width: 40%;
+  }
 }
 .contenedor .flex-container .titulo-imagen .titulo {
   text-align: center;
@@ -341,7 +348,12 @@ footer .copy p {
   height: auto;
 }
 .contenedor .flex-container .boton-texto {
-  width: 55%;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .contenedor .flex-container .boton-texto {
+    width: 55%;
+  }
 }
 .contenedor .flex-container .boton-texto button {
   border: solid 4px #AD081B;
@@ -354,22 +366,27 @@ footer .copy p {
   font-size: 18px;
   font-weight: bold;
   padding: 10px 25px;
+  transition: all 0.3s ease;
 }
 .contenedor .flex-container .boton-texto button:hover {
   background-color: #DAA942;
   color: #AD081B;
 }
-.contenedor .flex-container .boton-texto button .fa-solid {
+.contenedor .flex-container .boton-texto button:hover i {
+  color: #AD081B;
+}
+.contenedor .flex-container .boton-texto button i {
   color: #F0E290;
 }
 .contenedor .flex-container .boton-texto .caja {
   margin-top: 25px;
   text-align: center;
   color: #002436;
+  display: none;
 }
 
 .contact-form .contact-form-content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 65px;
@@ -485,81 +502,67 @@ footer .copy p {
   color: inherit;
 }
 
-.faqs {
+.section-faqs .faqs {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+@media screen and (min-width: 1200px) {
+  .section-faqs .faqs {
+    width: 80%;
+  }
+}
+.section-faqs .faqs .title-section {
+  position: relative;
   text-align: center;
-  color: #014C35;
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
 }
-
-.bells {
+.section-faqs .faqs .title-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
+  height: 80px;
+  background-image: url(/assets/images/bells.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section-faqs .faqs .faqs-grid {
+  margin: 65px auto;
 }
-
-body {
-  background-color: #fff;
-  color: #fff;
-  margin: 0;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-
-p {
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-main {
-  width: 960px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px 30px 60px 30px;
-  text-align: left;
-}
-
-.faqs-item {
+.section-faqs .faqs .faqs-grid .faqs-item {
   width: 100%;
   margin: 0 0 20px 0;
   padding: 0;
   display: block;
-  background-color: rgb(1, 76, 53);
+  background-color: #014C35;
 }
-
-.faqs-title {
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-title {
   display: flex;
   position: relative;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #F0E290;
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
   padding: 20px;
   width: 100%;
   outline: none;
   transition: 0.4s;
 }
-
-.faqs-title.active,
-.faqs-title:hover {
-  background-color: rgb(173, 8, 27);
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-title:hover {
+  background-color: #AD081B;
 }
-
-.faqs-title:after {
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-title.active {
+  background-color: #AD081B;
+}
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-title.active:after {
+  content: "−";
+}
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-title:after {
   content: "+";
   color: #fff;
   font-weight: normal;
@@ -569,21 +572,15 @@ main {
   line-height: 1;
   padding-left: 20px;
 }
-
-.faqs-title.active:after {
-  content: "−";
-}
-
-.faqs-content {
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-content {
   padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
-.faqs-content-inside {
+.section-faqs .faqs .faqs-grid .faqs-item .faqs-content .faqs-content-inside {
   padding: 20px;
-  color: #FFF;
+  color: #F0E290;
 }
 
 .banner-home .banner {
@@ -884,7 +881,12 @@ main {
   font-family: "Poppins", sans-serif;
 }
 .ask-for-your-letter .content-ask-for-your-letter #form-letter .inputs-text .form-control input {
-  width: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .ask-for-your-letter .content-ask-for-your-letter #form-letter .inputs-text .form-control input {
+    width: 50%;
+  }
 }
 .ask-for-your-letter .content-ask-for-your-letter #form-letter .inputs-text .form-control textarea {
   min-height: 250px;
@@ -903,6 +905,9 @@ main {
   display: none;
 }
 .ask-for-your-letter .content-ask-for-your-letter #form-letter .open-letter {
+  display: none;
+}
+.ask-for-your-letter .content-ask-for-your-letter #form-letter #btnDownloadM {
   display: none;
 }
 .ask-for-your-letter .content-ask-for-your-letter .modal {
@@ -1025,28 +1030,44 @@ main {
 }
 
 .terms {
-  text-align: center;
-  color: #014C35;
   margin-top: 25px;
 }
-
-.church {
+@media screen and (min-width: 1200px) {
+  .terms {
+    margin-top: 120px;
+  }
+}
+.terms .title-section {
+  position: relative;
+  text-align: center;
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+}
+.terms .title-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
+  height: 80px;
+  background-image: url(/assets/images/church.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.church .content {
+.terms .content {
   width: 80%;
-  margin: 0 auto;
-  margin-bottom: 65px;
+  margin: 75px auto;
+  text-align: left;
 }
-
-.back {
+.terms .back {
   background-color: #AD081B;
-  border-radius: 20.5px;
+  border-radius: 20px;
   border-color: rgb(218, 169, 66);
-  width: 110px;
-  height: 36.75px;
+  padding: 10px 35px;
   text-decoration: none;
   color: #E5EDF5;
   font-family: "Poppins", sans-serif;
+  margin-top: 35px;
 }/*# sourceMappingURL=main.css.map */

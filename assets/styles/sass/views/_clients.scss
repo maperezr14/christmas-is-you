@@ -11,11 +11,15 @@
         align-content: center;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 45px;
         @media screen and (min-width: 1200px) {
             flex-direction: row;
         }
         .titulo-imagen {
-            width: 40%;
+            width: 100%;
+            @media screen and (min-width: 1200px) {
+                width: 40%;
+            }
             .titulo{
                 text-align: center;
                 color: $color-verde-1;
@@ -36,7 +40,10 @@
             }
         }
         .boton-texto{
-            width: 55%;
+            width: 100%;
+            @media screen and (min-width: 1200px) {
+                width: 55%;
+            }
             button {
                 border: solid 4px $color-rojo;
                 border-radius: 10px ;
@@ -48,7 +55,7 @@
                 font-size: 18px;
                 font-weight: bold;
                 padding: 10px 25px;
-                transition: $transition;
+                transition: $transitions;
                 &:hover {
                     background-color: $color-dorado;
                     color: $color-rojo;
@@ -64,6 +71,7 @@
                 margin-top: 25px;
                 text-align: center;
                 color: $color-azul;
+                display: none;                
             }
         }
     }  

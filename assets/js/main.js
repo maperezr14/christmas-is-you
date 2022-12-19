@@ -1,5 +1,5 @@
 $(document).ready(function () {
-     AOS.init();
+    AOS.init();
     // Open/Close menu mobile
     $(".icon").click(function() {
         $(this).toggleClass('active');
@@ -41,42 +41,6 @@ $(document).ready(function () {
     });
 
     // Character counter of the textarea where the message of the letter is added.
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      // true for mobile device
-      $('#message').keyup(function() {    
-        var characterCount = 
-            $(this).val().length,
-            current = $('#current'),
-            maximum = $('#maximum'),
-            theCount = $('#the-count');
-        current.text(characterCount);
-        if (characterCount >= 350) {
-          maximum.css('color', '#AD081B');
-          current.css('color', '#AD081B');
-          theCount.css('font-weight','bold');
-        }
-        $('.step-three.only-mobile').css('display', 'block');
-        $('.open-letter.only-mobile').css('display', 'inline-block');
-      });
-    } else{
-      // false for not mobile device
-      $('#message').keyup(function() {    
-        var characterCount = 
-            $(this).val().length,
-            current = $('#current'),
-            maximum = $('#maximum'),
-            theCount = $('#the-count');
-        current.text(characterCount);
-        if (characterCount >= 350) {
-          maximum.css('color', '#AD081B');
-          current.css('color', '#AD081B');
-          theCount.css('font-weight','bold');
-        }
-        $('.step-three.only-desktop').css('display', 'block');
-        $('.open-letter.only-desktop').css('display', 'inline-block');
-      });
-    }
-
     $('#message').keyup(function() {    
         var characterCount = 
             $(this).val().length,
@@ -90,8 +54,43 @@ $(document).ready(function () {
           theCount.css('font-weight','bold');
         }
         $('.step-three').css('display', 'block');
-        $('.open-letter').css('display', 'inline-block');
+        $('.msjCustom').html('Descarga tu carta!');
+        $('#myBtn').hide();
+        $('#btnDownloadM').show();
     });
+
+    
+      $('#message').keyup(function() {    
+        var characterCount = 
+            $(this).val().length,
+            current = $('#current'),
+            maximum = $('#maximum'),
+            theCount = $('#the-count');
+        current.text(characterCount);
+        if (characterCount >= 350) {
+          maximum.css('color', '#AD081B');
+          current.css('color', '#AD081B');
+          theCount.css('font-weight','bold');
+        }
+        if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {
+          // true for mobile device
+          console.log('mobile');
+          $('.step-three').css('display', 'block');
+          $('.msjCustom').html('Descarga tu carta!');
+          $('#myBtn').hide();
+          $('#btnDownloadM').show();
+        } else {
+          // false for not mobile device
+            console.log('not mobile');          
+            $('.step-three').css('display', 'block');
+            $('.msjCustom').html('Mira tu carta aquí!');
+            $('#myBtn').show();
+            $('#btnDownloadM').hide();          
+        }
+      });
+      
+      
+    
 
     //Add child's name 
     $("#nameChild").keyup(function () {
@@ -119,7 +118,12 @@ $(document).ready(function () {
       })
     }
     
-    $('#btnDownload').click(function(){
+    $('#btnDownloadD').click(function(){
+      var element = document.querySelector("#capture");
+      saveCapture(element)
+    });
+
+    $('#btnDownloadM').click(function(){
       var element = document.querySelector("#capture");
       saveCapture(element)
     });
@@ -146,19 +150,19 @@ $(document).ready(function () {
     var span = document.getElementsByClassName("close")[0];
     
     // Open Modal
-    btn.onclick = function() {
-      modal.style.display = "block";
+    $(btn).onclick = function() {
+      $(modal).style.display = "block";
     }
 
     // Close modal
-    span.onclick = function() {
-      modal.style.display = "none";
+    $(span).onclick = function() {
+      $(modal).style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
-        modal.style.display = "none";
+        $(modal).style.display = "none";
       }
     }
 
