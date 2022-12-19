@@ -1,1 +1,33 @@
 // Estilos página de clientes
+$contenedor: rgb(245, 126, 126);
+$titulo: green;
+
+.contenedor{
+    background-color: $contenedor;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    .titulo{
+        color: $titulo;
+        text-align: center;
+    }
+    .responsive-img{
+        width: 100%;
+        height: auto;
+    }
+           
+    }
+    
+
+.contenedor-imagen{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

@@ -151,40 +151,6 @@ header nav .only-mobile.control .icon.active span::before {
 body {
   margin: 0;
   padding: 0;
-}
-
-.contact {
-  text-align: center;
-  color: #014C35;
-}
-
-.mark {
-  color: #014C35;
-  border: none;
-}
-
-.email {
-  background: rgba(1, 130, 81, 0.58);
-  border: 1px solid #ffffff;
-  border-radius: 16px;
-}
-
-.buttonc {
-  background-color: #AD081B;
-  border-radius: 20.5px;
-  border-color: rgb(218, 169, 66);
-  width: 145px;
-  height: 36.75px;
-}
-
-.direction {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  align-items: left;
-  justify-content: space-evenly;
-  padding: 3px;
-  margin-right: 5mm;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -305,4 +271,66 @@ footer .copy p {
   color: #F0E290;
   opacity: 0.7;
   min-width: none;
+}
+
+.contenedor {
+  background-color: rgb(245, 126, 126);
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.contenedor .titulo {
+  color: green;
+  text-align: center;
+}
+.contenedor .responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-imagen {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  color: #014C35;
+}
+
+.mark {
+  color: #014C35;
+  border: none;
+}
+
+.email {
+  background: rgba(1, 130, 81, 0.58);
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+}
+
+.buttonc {
+  background-color: #AD081B;
+  border-radius: 20.5px;
+  border-color: rgb(218, 169, 66);
+  width: 145px;
+  height: 36.75px;
+}
+
+.direction {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  align-items: left;
+  justify-content: space-evenly;
+  padding: 3px;
+  margin-right: 5mm;
 }/*# sourceMappingURL=main.css.map */
