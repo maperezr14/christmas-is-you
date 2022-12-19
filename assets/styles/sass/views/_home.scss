@@ -1,1 +1,144 @@
 // Estilos página de incio
+
+@import "../base/typos";
+@import "../utilities/variables";
+
+.banner-home {
+    .banner{
+        width: 100%;
+        height: 100%;
+        picture {
+            img {
+                width: 100%;
+            }        
+        }
+    }
+}
+
+
+.about_us{
+    margin: 0px;
+    padding: 50px 0;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        padding: 50px;
+    }
+    .about-us_container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:1200px){
+            width: 80%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cluster{
+            width: 100%;
+            @media screen and (min-width:1200px){
+               width: 40%;
+               order: 2;
+
+            }
+           img{
+            width: 100%;        
+           }        
+        }
+        p{
+            @media screen and (min-width:1200px){
+                width: 55%;
+                order: 1; 
+            } 
+        }
+    }
+}
+
+
+
+.ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+    background: rgba(240, 226, 144, 0.4);
+    padding: 65px 0;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 45px;
+        @media screen and (min-width:1200px){
+           flex-direction: row;
+           align-items: center;
+
+         } 
+         li{
+            font-size: 20px;
+            margin:15px 25px;
+            i{
+                width: 40px;
+                height: 40px;
+                color:red;
+                border:3px solid;
+                border-radius: 100%;
+                margin-right: 10px;
+                text-align: center;
+                line-height: 40px;
+            }
+         }
+    }
+
+}
+
+.our_clients{
+    text-align: center;
+    .our_clients-content {
+        margin-bottom: 65px;
+        .image_customers{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-bottom: 65px;
+            flex-direction: column;
+            @media screen and (min-width: 1200px) {
+                flex-direction: row;
+            }
+            .client {
+                text-align: center;
+                margin-bottom: 45px;
+                img {
+                    border-radius: 100%;
+                    width:150px; 
+                    height:150px;
+                    margin:0 auto;
+                    margin-bottom: 20px;
+                    @media screen and (min-width:1300px) {
+                        width: 160px; 
+                        height: 160px;
+                        margin: 0 40px;
+                        margin-bottom: 20px;
+                    }
+                }
+                span {
+                    color: $color-rojo;
+                    font-weight: bold;
+                    display: block;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+    
+  
+
+
