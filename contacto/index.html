@@ -14,6 +14,7 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/styles/css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,8 @@
     <section class="contact-form">
       <div class="contact-form-content">
         <h1 class="title-section">Contacto</h1>
-        <form action="" class="contact-box">
+        <form action="" class="contact-box" data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="form-control half-control">
             <label class="label-form" for="name">Nombre:</label>
             <input class="control" type="text" name="Nombre">
@@ -57,7 +59,7 @@
             <button class="buttonc btns">Enviar</button>
           </div>
         </form>
-        <ul class="direction">
+        <ul class="direction" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <li>
             <i class="fa-solid fa-location-dot"></i> Calle Alcalá, 28032, Madrid
           </li>
@@ -109,6 +111,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
