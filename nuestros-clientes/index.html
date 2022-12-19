@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="jquery" href="https://developers.google.com/speed/libraries#jquery">
 
     <title>Christmas Is You</title>
 
@@ -34,6 +35,109 @@
     <main>
       <!-- Aqui va tu código, por fa no modifiques ni el header ni el footer :) <3 -->
         
+        <h1>Nuestros clientes</h1>
+        
+        <section>
+      <div class="contenedor">
+            
+            <h1 class="titulo">Santa Claus</h1>
+            <div class="contenedor-imagen">
+            <img class="responsive-img" src="/assets/images/papa noel.svg">
+            </div>
+            
+
+           <button onclick="myFunction()"><i class="fa-solid fa-plus"></i></button>
+             <div "id="myDIV">
+              this is mi id
+             </div>
+           
+
+          <!--
+          
+            <div class="wrapper">-->
+              <!---Accordion Hea
+              <div class="parent-tab">
+                <label for="">
+                  <span>Accordion Heading One</span>
+                  <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                </label>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit iste laudantium minus tempore non. Eaque neque, debitis sint tempore necessitatibus accusantium! Iste, labore repellat.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--acordeon uno (no funciona)
+            <div class="accordion">
+              <div class="contentBx">
+                 <div class="label">List one</div>
+             
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur. Tellus libero commodo dolor ut turpis nibh lacus vulputate amet. Sagittis nec vulputate fringilla nunc id. Convallis dui volutpat imperdiet nunc risus. Phasellus ultrices congue erat id cursus proin. Eget dolor maecenas sodales morbi neque sit libero. </p>
+                </div>
+
+                </div>
+              </div>
+            </div>-->
+
+      </div>
+    
+    
+          <div class="contenedor"> 
+            <h1 class="titulo">Los reyes magos</h1>
+            <div class="contenedor-imagen">
+            <img class="responsive-img" src="/assets/images/los reyes magos.svg">
+            </div>
+            
+            </div>
+
+          <div class="contenedor">
+
+             <h1 class="titulo">Cagatió</h1>
+             <div class="contenedor-imagen">
+             <img class="responsive-img" src="/assets/images/cagatió.svg">
+               </div>
+             <div class="accordion" id="accordionExample">
+           
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Cagatió
+                </button>
+                </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+        </div>
+        </div>
+        </div>
+          </div>
+
+        <div class="contenedor">
+          <h1 class="titulo">Olentzero</h1>
+          <div class="contenedor-imagen">
+            <img class="responsive-img"src="/assets/images/olentzero.svg">
+            </div>
+            <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Olentzero
+        </button>
+         </h2>
+         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+          </div>
+            </div>--->
+        </div>-->
+
+        </section>
+
+
     </main>
     <footer>
         <div class="top-info">
@@ -71,5 +175,30 @@
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../assets/js/main.js"></script>  
+    <!--accordeon-->
+    
+    <!--bton-->
+<script>
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+    <!--
+    <script>
+      const accordion= document.getElementsByClassName('contentBx');
+
+      for (i=0, i<accordion.length; i++){
+        accordion[i].addEventListener('click', function(){
+          this.classList.toggle('active')
+        })
+      }
+    </script>-->
 </body>
 </html>

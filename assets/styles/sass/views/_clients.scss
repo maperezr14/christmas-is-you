@@ -1,1 +1,65 @@
 // Estilos página de clientes
+$contenedor: rgb(245, 126, 126);
+$titulo: green;
+
+.contenedor{
+    background-color: $contenedor;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    .titulo{
+        color: $titulo;
+        text-align: center;
+    }
+    .responsive-img{
+        width: 100%;
+        height: auto;
+    }
+           
+    }
+    
+
+.contenedor-imagen{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Accordion*/
+
+.wrapper{
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.wrapper .parent-tab label{
+    background: #007bff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+button{
+    border: solid 4px red;
+    border-radius: 10px ;
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    align-items: center;
+    float: inline-start;
+}
+
+.fa-solid{
+    color: aliceblue;
+}
