@@ -7,6 +7,7 @@
     width: 100%;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +32,8 @@ h6 {
     letter-spacing: 1px;
 
 }
+=======
+>>>>>>> 4f7ac7343a91d449187516ac4c567b6d5ebfab6b
 
 p {
     line-height: 1.5;
@@ -44,6 +47,7 @@ main {
     padding: 30px 30px 60px 30px;
     text-align: left;
 }
+//.faqs-grid {}
 
 .faqs-item {
     width: 100%;
@@ -66,7 +70,7 @@ main {
     transition: 0.4s;
 }
 
-.active,
+.faqs-title.active,
 .faqs-title:hover {
     background-color: rgba(173, 8, 27, 1);
 }
@@ -82,7 +86,7 @@ main {
     padding-left: 20px;
 }
 
-.active:after {
+.faqs-title.active:after {
     content: "\2212";
 }
 
@@ -95,4 +99,5 @@ main {
 
 .faqs-content-inside {
     padding: 20px;
+    color: #FFF;
 }
