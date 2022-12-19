@@ -40,6 +40,42 @@ $(document).ready(function () {
     });
 
     // Character counter of the textarea where the message of the letter is added.
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      // true for mobile device
+      $('#message').keyup(function() {    
+        var characterCount = 
+            $(this).val().length,
+            current = $('#current'),
+            maximum = $('#maximum'),
+            theCount = $('#the-count');
+        current.text(characterCount);
+        if (characterCount >= 350) {
+          maximum.css('color', '#AD081B');
+          current.css('color', '#AD081B');
+          theCount.css('font-weight','bold');
+        }
+        $('.step-three.only-mobile').css('display', 'block');
+        $('.open-letter.only-mobile').css('display', 'inline-block');
+      });
+    } else{
+      // false for not mobile device
+      $('#message').keyup(function() {    
+        var characterCount = 
+            $(this).val().length,
+            current = $('#current'),
+            maximum = $('#maximum'),
+            theCount = $('#the-count');
+        current.text(characterCount);
+        if (characterCount >= 350) {
+          maximum.css('color', '#AD081B');
+          current.css('color', '#AD081B');
+          theCount.css('font-weight','bold');
+        }
+        $('.step-three.only-desktop').css('display', 'block');
+        $('.open-letter.only-desktop').css('display', 'inline-block');
+      });
+    }
+
     $('#message').keyup(function() {    
         var characterCount = 
             $(this).val().length,

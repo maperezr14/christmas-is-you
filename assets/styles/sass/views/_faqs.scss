@@ -1,4 +1,6 @@
 // Estilos página de preguntas frecuentes
+@import "../utilities/variables";
+
 .faqs{
     text-align: center;
     color: #014C35;    
@@ -7,44 +9,6 @@
     width: 100%;
     margin: 0 auto;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    color: #fff;
-    margin: 0;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-
-}
-
-p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-main {
-    width: 960px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 30px 30px 60px 30px;
-    text-align: left;
-}
-//.faqs-grid {}
 
 .faqs-item {
     width: 100%;
