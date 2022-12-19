@@ -1,65 +1,71 @@
 // Estilos página de clientes
-$contenedor: rgb(245, 126, 126);
-$titulo: green;
+@import "../utilities/variables";
 
-.contenedor{
-    background-color: $contenedor;
+.contenedor {
     width: 100%;
     height: auto;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    .titulo{
-        color: $titulo;
-        text-align: center;
-    }
-    .responsive-img{
-        width: 100%;
-        height: auto;
-    }
-           
-    }
+    padding: 20px;
+    .flex-container {
+        align-items: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+        .titulo-imagen {
+            width: 40%;
+            .titulo{
+                text-align: center;
+                color: $color-verde-1;
+                margin-bottom: 15px;
+            }
+            .contenedor-imagen{
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                .responsive-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .boton-texto{
+            width: 55%;
+            button {
+                border: solid 4px $color-rojo;
+                border-radius: 10px ;
+                background-color: $color-rojo;
+                align-items: center;
+                margin: 0 auto;
+                display:block;
+                color: $color-amarillo;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px 25px;
+                transition: $transition;
+                &:hover {
+                    background-color: $color-dorado;
+                    color: $color-rojo;
+                    i {
+                        color: $color-rojo;
+                    }
+                }                
+                i {
+                    color: $color-amarillo;
+                }
+            }
+            .caja{
+                margin-top: 25px;
+                text-align: center;
+                color: $color-azul;
+            }
+        }
+    }  
     
-
-.contenedor-imagen{
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/*Accordion*/
-
-.wrapper{
-    max-width: 600px;
-    padding: 0 20px;
-}
-
-.wrapper .parent-tab label{
-    background: #007bff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    border-radius: 3px;
-
-}
-
-button{
-    border: solid 4px red;
-    border-radius: 10px ;
-    width: 120px;
-    height: 50px;
-    background-color: red;
-    align-items: center;
-    float: inline-start;
-}
-
-.fa-solid{
-    color: aliceblue;
-}
+ }
