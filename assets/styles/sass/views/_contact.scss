@@ -70,8 +70,20 @@
                 textarea {
                     width: 100%;
                 }
-                .buttonc {
-
+                .buttonc{
+                    background-color: #AD081B;
+                    border-radius: 20.5px;
+                    border-color: rgba(218, 169, 66, 1);
+                    // width: 110px;
+                    // height: 36.75px;
+                    text-decoration: none;
+                    color: #E5EDF5;
+                    font-family: $font-family;
+                    @media screen and(min-width:1300px) {
+                        font-size: 15px;
+                        // margin-left: 35mm;
+                    }
+                
                 }
                 // margin-bottom: 15px;
                 // width: 100%;            
@@ -149,21 +161,7 @@
                 // }
                 
             }
-            .buttonc{
-                background-color: #AD081B;
-                border-radius: 20.5px;
-                border-color: rgba(218, 169, 66, 1);
-                // width: 110px;
-                // height: 36.75px;
-                text-decoration: none;
-                color: #E5EDF5;
-                font-family: 'Poppins', sans-serif;
-                @media screen and(min-width:1300px) {
-                    font-size: 15px;
-                    // margin-left: 35mm;
-                }
-            
-            }  
+              
         }
         .direction {
             display: flex;
