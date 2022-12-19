@@ -31,3 +31,35 @@ $titulo: green;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/*Accordion*/
+
+.wrapper{
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.wrapper .parent-tab label{
+    background: #007bff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+button{
+    border: solid 4px red;
+    border-radius: 10px ;
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    align-items: center;
+    float: inline-start;
+}
+
+.fa-solid{
+    color: aliceblue;
+}
