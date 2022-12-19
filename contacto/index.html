@@ -14,62 +14,10 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/styles/css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-<<<<<<< HEAD
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="../assets/images/logo.png" alt="Christmas Is You"></a>
-            </div>
-            <ul class="navbar">
-                <li><a href="../index.html" class="option-menu">Inicio</a></li>
-                <li><a href="../nuestros-clientes/index.html" class="option-menu">Nuestros Clientes</a></li>
-                <li><a href="../pide-tu-carta/index.html" class="option-menu">Pide tu Carta</a></li>
-                <li><a href="../contacto/index.html" class="option-menu">Contacto</a></li>
-            </ul>
-            <!-- Este div solo se mostrará en dispositivos móviles, normalmente uso una clase maestra en tipo "only-mobile" o "only-desktop" para elementos que se muestran y/o ocultan en un tamaño u otro. -->
-            <div class="only-mobile control">
-                <div class="icon">
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-      <h1 class="contact">Contacto</h1>
-      <img class="gift" src="../assets/images/contacto-separador.png" alt="separador regalo">
-      <form action="action_page.php" class="contact-box">
-          <fieldset class="mark">
-            <div class="form-control half-control"> 
-                <label class="subtitle-form" for="name">Nombre:</label>
-                <input class="name-contact" type="text" name="Nombre">
-           </div>
-           <div class="form-control half-control" > 
-                <label class="email-form" for="mail">Correo electrónico:</label>
-                <input class="email"  type="text" name="Correo">
-           </div>
-           <div class="form-control"> 
-                <label class="subtitle-form" for="msg">Mensaje:</label>
-                <textarea class="message" name="mensaje" cols="30" rows="10"></textarea>
-           </div>
-              <button class="buttonc"> Enviar </button>
-          </fieldset>
-      </form>
-      <div>
-        <ul>
-        <div class="direction">
-          <li>
-            <i class="fa-solid fa-location-dot"></i> 25, Calle Alcalá, 28032, Madrid
-          </li>
-          <li >
-            <i class="fa-solid fa-phone"></i>xxx-xxx-xxx
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i> tanjiro@gmail.com
-          </li>
-=======
   <header>
     <nav>
       <div class="logo">
@@ -85,7 +33,6 @@
       <div class="only-mobile control">
         <div class="icon">
           <span></span>
->>>>>>> 25963b401b867eb9d4171730fd1dc529e79f716c
         </div>
       </div>
     </nav>
@@ -94,7 +41,8 @@
     <section class="contact-form">
       <div class="contact-form-content">
         <h1 class="title-section">Contacto</h1>
-        <form action="" class="contact-box">
+        <form action="" class="contact-box" data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="form-control half-control">
             <label class="label-form" for="name">Nombre:</label>
             <input class="control" type="text" name="Nombre">
@@ -111,7 +59,7 @@
             <button class="buttonc btns">Enviar</button>
           </div>
         </form>
-        <ul class="direction">
+        <ul class="direction" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <li>
             <i class="fa-solid fa-location-dot"></i> Calle Alcalá, 28032, Madrid
           </li>
@@ -163,6 +111,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
