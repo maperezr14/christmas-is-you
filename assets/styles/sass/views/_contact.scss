@@ -1,10 +1,12 @@
 // Estilos página de contacto
+@import "../utilities/variables";
 
 .contact-form {
     .contact-form-content {
         width: 90%;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 120px;
+        margin-bottom: 65px;
         @media screen and (min-width: 1200px){
             width: 80%;
         }
@@ -12,8 +14,12 @@
             position: relative;
             text-align: center;
             text-align: center;
-            padding-bottom: 100px;
-            margin-bottom: 65px;
+            padding-bottom: 75px;
+            margin-bottom: 30px;
+            @media screen and (min-width: 1200px) {                
+                padding-bottom: 100px;
+                margin-bottom: 65px;
+            }
             &::after {
                 content: '';
                 position: absolute;
@@ -28,105 +34,157 @@
             }
         }
         .contact-box {
-            .mark{
-                color: #014C35;
-                border: none;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                .form-control{
-                    margin-bottom: 15px;
-                    width: 100%;            
-                    .subtitle-form{
-                        display: block;
-                        @media screen and (min-width:1300px) {
-                            margin-left: 35mm; 
-                        }
+            color: $color-verde-1;
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .form-control {
+                width: 100%;
+                margin-bottom: 25px;
+                &.half-control {
+                    width: 100%;
+                    @media screen and (min-width:1200px){
+                        width: 48%;
                     }
-                    .email-form{
-                        display: block;
-                        @media screen and (min-width:1300px) {
-                            margin-left: 10mm; 
-                        }
-                    }
-                    &.half-control{
-                        width: 100%;
-                        @media screen and (min-width:768px) {
-                            width: 50%;  
-                        }
-                    }            
-                    .email{
-                        background:rgba(16, 178, 101, 0.58);
-                        border: 1px solid #ffffff;
-                        border-radius: 9px;
-                        border: 1px solid #014C35;
-                        width: 340px;
-                        height: 35.12px;
-                        @media screen and(min-width:768px) {
-                            width: 353px;
-                            height: 48.4px;
-                        }
-                        @media screen and(min-width: 1300px) {
-                            width: 545px;
-                            height: 48.4px;
-                            margin-left: 7mm;
-                        }            
-                    }
-                    .message{
-                        background:rgba(16, 178, 101, 0.58);
-                        border: 1px solid #ffffff;
-                        border-radius: 9px;
-                        border: 1px solid #014C35;
-                        width: 340px;
-                        height: 67.91px;
-                        font-family: 'Poppins', sans-serif;
-                        @media screen and(min-width:768px){
-                            width: 730px;
-                            height: 90.52px;
-                        }
-                        @media screen and(min-width:1300px){
-                            width: 1104px;
-                            height: 90.52px;
-                            margin-left: 35mm;                            
-                        }
-                    }
-                    .name-contact{
-                        background:rgba(16, 178, 101, 0.58);
-                        border: 1px solid #ffffff;
-                        border-radius: 9px;
-                        border: 1px solid #014C35;
-                        width: 340px;
-                        height: 35.12px;
-                        font-family: 'Poppins', sans-serif;
-                        @media screen and(min-width:768px) {
-                            width: 353px;
-                            height: 48.4px;
-                        }
-                        @media screen and(min-width:1300px) {
-                            width: 545px;
-                            height: 48.4px;
-                            margin-left: 35mm;
-                        }
-            
-                    }
-                    
                 }
-                .buttonc{
-                    background-color: #AD081B;
-                    border-radius: 20.5px;
-                    border-color: rgba(218, 169, 66, 1);
-                    width: 110px;
-                    height: 36.75px;
-                    text-decoration: none;
-                    color: #E5EDF5;
-                    font-family: 'Poppins', sans-serif;
-                    @media screen and(min-width:1300px) {
-                        font-size: 15px;
-                        margin-left: 35mm;
+                .label-form {
+                    display: block;
+                    width: 100%;
+                    font-weight: 400;                    
+                    margin-bottom: 5px;                    
+                    @media screen and (min-width:1200px){
+                        font-size: 20px;
                     }
+                }
+                .control {
+                    width: 100%;
+                    background: rgba(16, 179, 101, 0.5);
+                    border-radius: 16px;
+                    border: 0;
+                    padding: 10px;
+                    font-family: $font-family;
+                    color: $color-verde-1;
+                }
+                textarea {
+                    width: 100%;
+                }
+                .buttonc {
+
+                }
+                // margin-bottom: 15px;
+                // width: 100%;            
+                // .subtitle-form{
+                //     display: block;
+                //     @media screen and (min-width:1200px) {
+                //         // margin-left: 35mm; 
+                //     }
+                // }
+                // .email-form{
+                //     display: block;
+                //     @media screen and (min-width:1200px) {
+                //         // margin-left: 10mm; 
+                //     }
+                // }
+                // &.half-control{
+                //     width: 100%;
+                //     // @media screen and (min-width:768px) {
+                //     //     width: 50%;  
+                //     // }
+                //     @media screen and (min-width:1200px) {
+                //         width: 50%;
+                //     }
+                // }            
+                // .email{
+                //     background:rgba(16, 178, 101, 0.58);
+                //     border-radius: 9px;
+                //     border: 1px solid $color-verde-1;
+                //     // width: 340px;
+                //     // height: 35.12px;
+                //     // @media screen and(min-width:768px) {
+                //     //     width: 353px;
+                //     //     height: 48.4px;
+                //     // }
+                //     @media screen and(min-width: 1200px) {
+                //         // width: 545px;
+                //         // height: 48.4px;
+                //         // margin-left: 7mm;
+                //     }            
+                // }
+                // .message{
+                //     background:rgba(16, 178, 101, 0.5);
+                //     border-radius: 9px;
+                //     border: 1px solid $color-verde-1;
+                //     // width: 340px;
+                //     // height: 67.91px;
+                //     font-family: $font-family;
+                //     // @media screen and(min-width:768px){
+                //     //     width: 730px;
+                //     //     height: 90.52px;
+                //     // }
+                //     @media screen and(min-width:1200px){
+                //         // width: 1104px;
+                //         // height: 90.52px;
+                //         // margin-left: 35mm;                            
+                //     }
+                // }
+                // .name-contact{
+                //     background:rgba(16, 178, 101, 0.58);
+                //     border-radius: 9px;
+                //     border: 1px solid $color-verde-1;
+                //     width: 340px;
+                //     height: 35.12px;
+                //     font-family: 'Poppins', sans-serif;
+                //     @media screen and(min-width:768px) {
+                //         width: 353px;
+                //         height: 48.4px;
+                //     }
+                //     @media screen and(min-width:1300px) {
+                //         width: 545px;
+                //         height: 48.4px;
+                //         margin-left: 35mm;
+                //     }
+        
+                // }
                 
-                }                
+            }
+            .buttonc{
+                background-color: #AD081B;
+                border-radius: 20.5px;
+                border-color: rgba(218, 169, 66, 1);
+                // width: 110px;
+                // height: 36.75px;
+                text-decoration: none;
+                color: #E5EDF5;
+                font-family: 'Poppins', sans-serif;
+                @media screen and(min-width:1300px) {
+                    font-size: 15px;
+                    // margin-left: 35mm;
+                }
+            
+            }  
+        }
+        .direction {
+            display: flex;
+            padding: 0;
+            margin: 0 auto;
+            list-style: none;
+            flex-direction: column;
+            align-items: flex-start;
+            align-content: center;
+            justify-content: center;
+            margin: 56px 0;
+            @media screen and (min-width: 1200px) {
+                flex-direction: row;
+                justify-content: center;
+            }
+            li {
+                margin: 0 15px;
+                margin-bottom: 25px;
+                a {
+                    color: inherit;
+                }
             }
         }
     }
