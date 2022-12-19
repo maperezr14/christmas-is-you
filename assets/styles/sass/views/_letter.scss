@@ -1,1 +1,294 @@
 // Estilos página de pide tu carta
+@import "../utilities/variables";
+
+.ask-for-your-letter {
+    .content-ask-for-your-letter {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-top: 90px;
+        @media screen and (min-width: 1200px){
+            width: 80%;
+        }
+        .title-section {
+            position: relative;
+            text-align: center;
+            text-align: center;
+            padding-bottom: 100px;
+            margin-bottom: 30px;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 80px;
+                background-image: url(/assets/images/cintillo-carta.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        #form-letter {
+            background: rgba(1, 76, 53, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 65px;
+            @media screen and (min-width: 1200px) {
+                background: none;
+                padding: 0;
+            }
+            p {
+                font-size: 16px;
+                &.step-letter {
+                    font-weight: 400;
+                    @media screen and (min-width: 1200px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .options-characters {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+                margin-bottom: 45px;
+                .form-control {
+                    width: calc(45% - 10px);
+                    margin: 10px;
+                    text-align: center;
+                    @media screen and (min-width: 1200px) {
+                        width: calc(25% - 20px);
+                    }
+                    .label-control {
+                        display: block;
+                        position: relative;
+                        border-radius: 100%;
+                        width: 75px;
+                        height: 75px;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                        @media screen and (min-width: 1200px) {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        &.characters {
+                            img {
+                                border-radius: 100%;
+                                width: 75px;
+                                @media screen and (min-width: 1200px) {
+                                    width: 150px;
+                                }
+                            }
+                        }                        
+                        .opt-radius {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            margin: 0;
+                            padding: 0;
+                            cursor: pointer;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 80px;
+                                height: 80px;
+                                border: 2px solid rgba(0, 36, 54, 0.3);
+                                border-radius: 100%;
+                                transition: $transitions;
+                                @media screen and (min-width: 1200px) {
+                                    width: 160px;
+                                    height: 160px;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                    border: 2px solid rgb(173, 8, 27);
+                                }
+                            }
+                            &:checked {
+                                &::before {
+                                    border: 2px solid rgb(173, 8, 27);
+                                }
+                            }
+                        }
+                    }
+                    span {
+                        font-weight: bold;
+                        color: $color-rojo;
+                    } 
+                }
+            }
+            .inputs-text {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 1200px) {
+                    width: 100%;
+                }
+                .form-control {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    label {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    input, textarea {
+                        padding: 10px;
+                        border-radius: 8px;
+                        border: 1px solid #014C35;
+                        font-size: 16px;
+                        font-family: $font-family;
+                    }
+                    input {
+                        width: 50%;
+                    }
+                    textarea {
+                        min-height: 250px;
+                        @media screen and (min-width: 1200px) {
+                            min-height: auto;
+                        }
+                    }
+                    #the-count {
+                        text-align: right;
+                        margin-top: 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .step-three {
+                display: none;
+            }
+            .open-letter {
+                display: none;
+            }
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: $color-azul;                
+            .modal-content {
+                margin: auto;
+                width: 665px;
+                .close {
+                    color: #aaaaaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .capture {
+                    position: relative;
+                    margin-bottom: 40px;
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                    .content-letter {
+                        position: absolute;                        
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 80%;
+                    }
+                    &.letter-santa {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 565px;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 45px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 25px;
+                            }
+                            .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-olentzero {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 295px;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 45px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 25px;
+                            }
+                            .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-kings {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 545px;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 45px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 25px;
+                            }
+                            .msg-to-kid {
+                                font-size: 26px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                    &.letter-cagatio {
+                        font-family: 'Marck Script', cursive;
+                        .content-letter {
+                            top: 315px;
+                            width: 57%;
+                            .name-kid {
+                                color: #b00409;
+                                font-size: 30px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                margin-bottom: 15px;
+                            }
+                            .msg-to-kid {
+                                font-size: 16px;
+                                color: #060606;
+                            }
+                        }
+                    }
+                }
+                .btn-download {
+                    display: inline-block;
+                    margin: 0 auto;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-bottom: 75px;
+                }
+            }
+        }
+    }   
+}
