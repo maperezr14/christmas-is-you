@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(this).toggleClass('selected');
         var val = $(this).val();
         console.log(val);
-        $('.img-capture').attr('src', '/assets/images/letter-from-'+val+'.jpg');
+        $('.img-capture').attr('src', '../assets/images/letter-from-'+val+'.jpg');
         switch (val) { 
           case 'santa':
             console.log('Selected Santa');
