@@ -11,18 +11,18 @@ footer {
         justify-content: space-between;
         flex-direction: column;
         text-align: center;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1181px) {
             flex-direction: row;
         }
         .bloq-top {
             width: 100%;
             margin-bottom: 35px;
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1181px) {
                 width: 33.333%;
             }            
             &:first-child {
                 text-align: center;
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 1181px) {
                     text-align: left;
                 }
             }

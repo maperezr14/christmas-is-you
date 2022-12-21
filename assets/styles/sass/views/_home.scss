@@ -20,7 +20,7 @@
     margin: 0px;
     padding: 50px 0;
     text-align: center;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1181px) {
         padding: 50px;
     }
     .about-us_container{
@@ -28,7 +28,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:1181px){
             width: 80%;
             flex-direction: row;
             align-items: center;
@@ -36,17 +36,16 @@
         }
         .cluster{
             width: 100%;
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:1181px){
                width: 40%;
                order: 2;
-
             }
            img{
             width: 100%;        
            }        
         }
-        p{
-            @media screen and (min-width:1200px){
+        p {
+            @media screen and (min-width:1181px){
                 width: 55%;
                 order: 1; 
             } 
@@ -72,7 +71,7 @@
         padding: 0;
         margin: 0;
         margin-bottom: 45px;
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:1181px){
            flex-direction: row;
            align-items: center;
 
@@ -98,7 +97,7 @@
 .our_clients{
     text-align: center;
     .our_clients-content {
-        margin-bottom: 65px;
+        margin-bottom: 65px;        
         .image_customers{
             display: flex;
             align-items: center;
@@ -106,12 +105,19 @@
             justify-content: center;
             margin-bottom: 65px;
             flex-direction: column;
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 820px) and (max-width: 1180px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            @media screen and (min-width: 1181px) {
                 flex-direction: row;
             }
             .client {
                 text-align: center;
                 margin-bottom: 45px;
+                @media screen and (min-width: 820px) and (max-width: 1180px) {
+                    width: 45%;
+                }
                 img {
                     border-radius: 100%;
                     width:150px; 

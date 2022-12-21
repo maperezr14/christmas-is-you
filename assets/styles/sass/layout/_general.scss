@@ -16,7 +16,7 @@ body {
     color: $color-verde-1;
     main {
         // padding: 75px 0;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1181px) {
             // padding: 95px 0;
         }
     }
@@ -27,7 +27,7 @@ body {
         margin-bottom: 35px;
         text-align: center;
         max-width: 90%;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1181px) {
             font-size: 38px;
             margin-bottom: 45px;
         }
@@ -40,6 +40,7 @@ body {
         padding: 10px 35px;
         border-radius: 8px;
         border-color: $color-dorado;
+        display: inline-block;
     }
     a {
         text-decoration: none;
@@ -48,13 +49,13 @@ body {
 
 .only-mobile {
     display: block;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1181px) {
         display: none;
     }
 }
 .only-desktop {
     display: none;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1181px) {
         display: block;
     }
 }

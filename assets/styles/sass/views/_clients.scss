@@ -1,10 +1,16 @@
 // Estilos página de clientes
 @import "../utilities/variables";
 
+.our-clients {
+    @media screen and (min-width: 820px) and (max-width: 1180px) {
+        margin-top: 135px;
+    }
+}
 .contenedor {
     width: 100%;
     height: auto;
     padding: 20px;
+    margin-bottom: 65px;
     .flex-container {
         align-items: center;
         display: flex;
@@ -12,12 +18,17 @@
         justify-content: center;
         flex-direction: column;
         margin-bottom: 45px;
-        @media screen and (min-width: 1200px) {
+        width: 100%;
+        @media screen and (min-width: 1181px) {
             flex-direction: row;
+        }
+        @media screen and (min-width: 820px) and (max-width: 1180px) {
+           width: 45%;
+           margin: 0 auto;
         }
         .titulo-imagen {
             width: 100%;
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1181px) {
                 width: 40%;
             }
             .titulo{
@@ -41,7 +52,7 @@
         }
         .boton-texto{
             width: 100%;
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1181px) {
                 width: 55%;
             }
             button {

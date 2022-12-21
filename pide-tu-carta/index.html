@@ -34,7 +34,7 @@
     </header>
     <main>
       <section class="ask-for-your-letter">
-        <div class="content-ask-for-your-letter">
+        <div class="content-ask-for-your-letter" data-aos="fade-up" data-aos-duration="1500">
           <h1 class="title-section">Pide tu carta</h1>
           <p>Sabemos que tu peque se ha portado muy bien durante este año, y queremos hacer que su regalo venga con una carta dirigida especialmente a él/ella.</p>
           <p>Sigue los pasos para conseguir su carta:</p>
@@ -85,29 +85,28 @@
                 </div>
               </div>
             </div>
-            <p class="step-letter step-three">3. Haz clic en el botón "<span class="msjCustom"></span>" y que surja la magia!</p>
+            <p class="step-letter step-three">3. Haz clic en el botón "Mira tu carta aquí!" y que surja la magia!</p>
             <div class="form-control">              
-              <a href="#" id="myBtn" class="btns open-letter">Mira tu carta aquí!</a>
-              <a href="#" class="btns btn-download" id="btnDownloadM">Descarga tu carta!</a>
+              <a href="#myModal" id="myBtn" class="btns open-letter">Mira tu carta aquí!</a>
             </div>
           </form>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div id="capture" class="capture">
-                <img src="" alt="Descarga tu carta" class="img-capture">
-                <div class="content-letter">
-                  <p class="name-kid">Hola, <span id="addName"></span>!</p>
-                  <div id="msg-to-kid" class="msg-to-kid"></div>
-                </div>                
-              </div>
-              <a href="#" class="btns btn-download" id="btnDownloadD">Descarga tu carta!</a>
-            </div>
-          </div>
         </div>
-      </section>     
+      </section>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="capture" class="capture">
+            <img src="" alt="Descarga tu carta" class="img-capture">
+            <div class="content-letter">
+              <p class="name-kid">Hola, <span id="addName"></span>!</p>
+              <div id="msg-to-kid" class="msg-to-kid"></div>
+            </div>                
+          </div>
+          <a href="#" class="btns btn-download" id="btnDownloadD">Descarga tu carta!</a>
+        </div>
+      </div>    
     </main>
     <footer>
         <div class="top-info">
